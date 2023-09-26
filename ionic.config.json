@@ -1,0 +1,7 @@
+{
+  "name": "premiere-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
