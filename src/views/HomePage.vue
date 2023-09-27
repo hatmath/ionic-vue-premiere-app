@@ -34,6 +34,9 @@
         <IonButton expand="block" color="medium" href="/geo">
           Géolocalisation
         </IonButton>
+        <IonButton expand="block" color="medium" href="/image">
+          Images
+        </IonButton>
       </div>
     </ion-content>
 

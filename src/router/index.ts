@@ -9,6 +9,7 @@ import Calculatrice from '../views/Calculatrice.vue';
 import CycleDeVie from '../views/CycleDeVie.vue';
 import Fetch from '../views/Fetch.vue';
 import Geo from '../views/Geo.vue';
+import Image from '../views/Image.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -60,6 +61,12 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Geolacalisation',
     component: Geo
   },
+  {
+    path: '/image',
+    name: 'Image',
+    component: Image
+  },
+  
 ]
 
 const router = createRouter({
