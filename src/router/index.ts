@@ -8,6 +8,7 @@ import PageQuatre from '../views/PageQuatre.vue';
 import Calculatrice from '../views/Calculatrice.vue';
 import CycleDeVie from '../views/CycleDeVie.vue';
 import Fetch from '../views/Fetch.vue';
+import Geo from '../views/Geo.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -53,6 +54,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/fetch',
     name: 'Fetch JSON',
     component: Fetch
+  },
+  {
+    path: '/geo',
+    name: 'Geolacalisation',
+    component: Geo
   },
 ]
 

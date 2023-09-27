@@ -31,6 +31,9 @@
         <IonButton expand="block" color="medium" href="/fetch">
           Fetch JSON
         </IonButton>
+        <IonButton expand="block" color="medium" href="/geo">
+          Géolocalisation
+        </IonButton>
       </div>
     </ion-content>
 
