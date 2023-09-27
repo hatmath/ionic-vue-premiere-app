@@ -33,7 +33,7 @@ import {
   IonItem, IonLabel,
 } from '@ionic/vue';
 
-import { alertController } from '@ionic/vue';
+import { loadingController } from '@ionic/vue';
 
 import { defineComponent } from 'vue';
 
@@ -60,6 +60,20 @@ export default defineComponent({
     this.getJSON();
   },
   methods: {
+    async getJSON() {
+      const loading = await loadingController.create({
+        message: 'Attendre SVP ...',
+      });
+      await loading.present();
+      let url = "https://StephaneDGill.github.io/disque.json";
+      fetch(url)
+      .then(reponse => reponse.json())
+      .then(data => {
+        console.log(data);
+        this.titre = data.titre_album;
+        loading.dismiss();
+      });
+    }
   }
 });
 

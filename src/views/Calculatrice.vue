@@ -39,14 +39,8 @@
           <ion-col>
             <ion-button shape="round" color="warming">&#215</ion-button>
           </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <IonButton color="medium" href="/pageDeux">P2</IonButton>
-          </ion-col>
-        </ion-row>
+        </ion-row>       
       </ion-grid>
-
     </ion-content>
   </ion-page>
 </template>
