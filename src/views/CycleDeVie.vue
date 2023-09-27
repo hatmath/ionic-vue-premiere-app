@@ -32,7 +32,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFooter, IonBac
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  ionViewDidEnter(){
+  ionViewDidEnter() {
     console.log("Home page did enter")
   },
   ionViewDidLeave(){

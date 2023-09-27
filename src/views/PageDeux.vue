@@ -56,7 +56,7 @@ export default defineComponent({
 
       const { role } = await alert.onDidDismiss();
       console.log('onDidDismiss: ', role);
-    },  
+    },
   }
 });
 

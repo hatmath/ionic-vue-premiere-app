@@ -7,6 +7,7 @@ import PageTrois from '../views/PageTrois.vue';
 import PageQuatre from '../views/PageQuatre.vue';
 import Calculatrice from '../views/Calculatrice.vue';
 import CycleDeVie from '../views/CycleDeVie.vue';
+import Fetch from '../views/Fetch.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -47,6 +48,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/cycledevie',
     name: 'Cycle De Vie',
     component: CycleDeVie
+  },
+  {
+    path: '/fetch',
+    name: 'Fetch JSON',
+    component: Fetch
   },
 ]
 

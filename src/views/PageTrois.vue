@@ -36,8 +36,10 @@
   
 <script lang="ts">
 
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFooter, IonBackButton, IonButtons, IonButton,  
-  IonItem, IonLabel, IonInput, IonSelect, IonSelectOption } from '@ionic/vue';
+import {
+  IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFooter, IonBackButton, IonButtons, IonButton,
+  IonItem, IonLabel, IonInput, IonSelect, IonSelectOption
+} from '@ionic/vue';
 
 import { alertController } from '@ionic/vue';
 
@@ -54,11 +56,17 @@ export default defineComponent({
     IonBackButton,
     IonButtons,
     IonButton,
-    IonItem, 
-    IonLabel, 
-    IonInput, 
-    IonSelect, 
+    IonItem,
+    IonLabel,
+    IonInput,
+    IonSelect,
     IonSelectOption
+  },
+  data() {
+    return {
+      monNom: '',
+      monGenre: ''
+    }
   },
   methods: {
     async afficheDialogue() {
@@ -74,13 +82,7 @@ export default defineComponent({
 
       const { role } = await alert.onDidDismiss();
       console.log('onDidDismiss: ', role);
-    }, 
-    data() {
-      return {
-        monNom: '',
-        monGenre: ''
-      }
-    } 
+    },
   }
 });
 

@@ -6,18 +6,14 @@
         <ion-buttons slot="start">
           <ion-back-button default-href="/home"></ion-back-button>
         </ion-buttons>
-        <ion-title>Page 4</ion-title>
+        <ion-title>Fetch JSON</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content>
       <ion-item>
-        <ion-label>Nom: </ion-label>
-        <ion-input v-model="monNom"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>--> </ion-label>
-        <ion-label>{{ this.monNom }}</ion-label>
+        <ion-label>Titre album: </ion-label>
+        <ion-label>{{ this.titre }}</ion-label>
       </ion-item>
     </ion-content>
 
@@ -33,8 +29,8 @@
 <script lang="ts">
 
 import {
-  IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFooter, IonBackButton, IonButtons, IonButton,
-  IonItem, IonLabel, IonInput, IonSelect, IonSelectOption, IonTextarea
+  IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFooter, IonBackButton, IonButtons,
+  IonItem, IonLabel,
 } from '@ionic/vue';
 
 import { alertController } from '@ionic/vue';
@@ -51,20 +47,20 @@ export default defineComponent({
     IonFooter,
     IonBackButton,
     IonButtons,
-    IonButton,
     IonItem,
     IonLabel,
-    IonInput,
-    IonSelect,
-    IonSelectOption,
-    IonTextarea,
   },
   data() {
     return {
-      monNom: "",
+      titre: "",
     }
+  },
+  ionViewDidEnter() {
+    console.log("Home page did enter")
+    this.getJSON();
+  },
+  methods: {
   }
-
 });
 
 </script>

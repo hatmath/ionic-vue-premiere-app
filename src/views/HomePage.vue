@@ -28,6 +28,9 @@
         <IonButton expand="block" color="medium" href="/cycledevie">
           Cycle de vie
         </IonButton>
+        <IonButton expand="block" color="medium" href="/fetch">
+          Fetch JSON
+        </IonButton>
       </div>
     </ion-content>
 
@@ -44,6 +47,4 @@
 import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFooter } from '@ionic/vue';
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
