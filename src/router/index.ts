@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
+import HomePage from '../views/HomePage.vue';
 import PageUn from '../views/PageUn.vue';
 import PageDeux from '../views/PageDeux.vue';
 import PageTrois from '../views/PageTrois.vue';
 import PageQuatre from '../views/PageQuatre.vue';
-import HomePage from '../views/HomePage.vue';
+import Calculatrice from '../views/Calculatrice.vue';
+import CycleDeVie from '../views/CycleDeVie.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -13,28 +15,38 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/home',
-    name: 'HomePage',
+    name: 'Home Page',
     component: HomePage
   },
   {
     path: '/pageUn',
-    name: 'PageUn',
+    name: 'Page Un',
     component: PageUn
   },
   {
     path: '/pageDeux',
-    name: 'PageDeux',
+    name: 'Page Deux',
     component: PageDeux
   },
   {
     path: '/pageTrois',
-    name: 'PageTrois',
+    name: 'Page Trois',
     component: PageTrois
   },
   {
     path: '/pageQuatre',
-    name: 'PageQuatre',
+    name: 'Page Quatre',
     component: PageQuatre
+  },
+  {
+    path: '/calculatrice',
+    name: 'Calculatrice',
+    component: Calculatrice
+  },
+  {
+    path: '/cycledevie',
+    name: 'Cycle De Vie',
+    component: CycleDeVie
   },
 ]
 

@@ -3,13 +3,13 @@
 
     <ion-header>
       <ion-toolbar color="primary">
-        <ion-title>Home</ion-title>
+        <ion-title>Page d'acceuil</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content>
       <div class="ion-text-center">
-        <p>Page d'acceuil</p>
+        <p>Actions</p>
         <IonButton expand="block" color="medium" href="/pageUn">
           Redirection
         </IonButton>
@@ -21,6 +21,12 @@
         </IonButton>
         <IonButton expand="block" color="medium" href="/pageQuatre">
           Affichage de données
+        </IonButton>
+        <IonButton expand="block" color="medium" href="/calculatrice">
+          Calculatrice
+        </IonButton>
+        <IonButton expand="block" color="medium" href="/cycledevie">
+          Cycle de vie
         </IonButton>
       </div>
     </ion-content>
