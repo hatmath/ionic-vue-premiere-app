@@ -13,7 +13,7 @@
     <ion-content>
       <ion-item>
         <ion-label>Titre album: </ion-label>
-        <ion-label>{{ this.titre }}</ion-label>
+        <ion-label>{{ titre }}</ion-label>
       </ion-item>
     </ion-content>
 

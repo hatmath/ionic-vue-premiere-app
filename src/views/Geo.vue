@@ -13,11 +13,11 @@
     <ion-content>
       <ion-item>
         <ion-label>Longitude: </ion-label>
-        <ion-label>{{ this.longitude }}</ion-label>
+        <ion-label>{{ longitude }}</ion-label>
       </ion-item>
       <ion-item>
         <ion-label>Latitude: </ion-label>
-        <ion-label>{{ this.latitude }}</ion-label>
+        <ion-label>{{ latitude }}</ion-label>
       </ion-item>
     </ion-content>
 
