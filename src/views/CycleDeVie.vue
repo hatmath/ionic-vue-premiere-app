@@ -33,16 +33,16 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   ionViewDidEnter() {
-    console.log("Home page did enter")
+    console.log("View did enter")
   },
   ionViewDidLeave(){
-    console.log("Home page did leave")
+    console.log("View did leave")
   },
   ionViewWillEnter(){
-    console.log("Home page will enter")
+    console.log("View will enter")
   },
   ionViewWillLeave(){
-    console.log("Home page will leave")
+    console.log("View will leave")
   },
   components: {
     IonContent,
