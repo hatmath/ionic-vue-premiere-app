@@ -17,7 +17,7 @@
       </ion-item>
       <ion-item>
         <ion-label>--> </ion-label>
-        <ion-label>{{ this.monNom }}</ion-label>
+        <ion-label>{{ monNom }}</ion-label>
       </ion-item>
     </ion-content>
 
