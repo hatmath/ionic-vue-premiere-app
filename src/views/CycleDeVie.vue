@@ -34,6 +34,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   ionViewDidEnter() {
     console.log("View did enter")
+    setTimeout(() => {console.log("timeout 3 sec")}, 3000);
   },
   ionViewDidLeave(){
     console.log("View did leave")
