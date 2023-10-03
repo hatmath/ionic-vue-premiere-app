@@ -12,7 +12,7 @@
 
     <ion-content>
       <ion-item>
-        <ion-img src="/assets/img/01d.png"></ion-img>
+        <ion-img src="src/assets/img/01d.png"></ion-img>
         <!-- <img src="assets/img/01d.png"> -->
       </ion-item>
       <ion-item>
